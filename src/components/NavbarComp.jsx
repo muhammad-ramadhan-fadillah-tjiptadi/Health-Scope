@@ -23,12 +23,9 @@ export default function NavbarComp() {
                     <Link to="/">
                         <button className="px-5 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 bg-white text-gray-900 shadow cursor-pointer">Home</button>
                     </Link>
-                    <a href="#">
-                        <button className="px-5 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-blue-100 hover:bg-white/10 hover:text-white cursor-pointer">Global</button>
-                    </a>
-                    <a href="#">
-                        <button className="px-5 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-blue-100 hover:bg-white/10 hover:text-white cursor-pointer">Countries</button>
-                    </a>
+                    <Link to="/national">
+                        <button className="px-5 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-blue-100 hover:bg-white/10 hover:text-white cursor-pointer">National</button>
+                    </Link>
                 </div>
             </div>
         </nav>

@@ -2,6 +2,7 @@ import './App.css'
 import NavbarComp from "./components/NavbarComp"
 import { useEffect, useState } from "react";
 import { Agentation } from "agentation";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const [summary, setSummary] = useState(null);
@@ -44,15 +45,13 @@ export default function App() {
                 Temukan informasi jumlah kasus, tingkat kematian, secara
                 akurat dan transparan — semua dalam satu platform.
               </p>
-
-              <div className="flex flex-wrap gap-3 mt-2">
-                <button className="px-6 py-2.5 rounded-xl bg-[#313474] text-white text-sm font-semibold hover:bg-[#252860] transition-colors shadow">
-                  Lihat Data Global
-                </button>
-                <button className="px-6 py-2.5 rounded-xl border border-gray-300 text-gray-700 text-sm font-semibold hover:bg-gray-100 transition-colors">
-                  Pelajari Lebih Lanjut
-                </button>
-              </div>
+              <Link to="/national">
+                <div className="flex flex-wrap gap-3 mt-2">
+                  <button className="px-6 py-2.5 rounded-xl bg-[#313474] text-white text-sm font-semibold hover:bg-[#252860] transition-colors shadow">
+                    Lihat Data National
+                  </button>
+                </div>
+              </Link>
             </div>
 
             {/* Right — Statistik */}
